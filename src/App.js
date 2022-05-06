@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import './style/landingPage.css';
+import NavigationBar from './components/NavigationBar';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* intro section */}
+      <div className="myBG">
+        <NavigationBar />
+        <div className="border intro">
+          <Container className="text-white d-flex justify-content-center align-items-center">
+            <Row>
+              <Col>Nonton Gratis Modal Kuota</Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+      {/*end intro section */}
+    </>
   );
 }
 
